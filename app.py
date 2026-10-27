@@ -247,7 +247,7 @@ with tabs[3]:
         delta={"reference": target_lr * 100, "increasing": {"color": COPPER}, "decreasing": {"color": TEAL}},
         title={"text": "Projected Loss Ratio vs Target"},
         gauge={
-            "axis": {"range": [0, max(110, scenario["loss_ratio"] * 125)], "suffix": "%"},
+            "axis": {"range": [0, max(110, scenario["loss_ratio"] * 125)], "ticksuffix": "%"},
             "bar": {"color": NAVY},
             "steps": [
                 {"range": [0, target_lr * 100], "color": "#dcebe5"},
